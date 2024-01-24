@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Draft {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number!(If your number is other than an integer, select an integer)");
+        int num1 = scanner.nextInt();
+        scanner.close();
+        int a;
+        a = 0;
+        while (true) {
+            a++;
+            if (num1 / a == 0){
+                System.out.println(a);
+            }
+            if (a > num1) break;
+        }
+}
+}
